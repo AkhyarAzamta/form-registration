@@ -1,11 +1,11 @@
 <?php
 
-@include 'config.php';
+@include './config/config.php';
 
 session_start();
 
 if(!isset($_SESSION['admin_name'])){
-   header('location:index.php');
+   header('location:../index.php');
    exit();
 }
 
@@ -20,7 +20,7 @@ if(!isset($_SESSION['admin_name'])){
    <title>admin page</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
 <body>
@@ -31,9 +31,9 @@ if(!isset($_SESSION['admin_name'])){
       <h3>hi, <span>admin</span></h3>
       <h1>welcome <span><?php echo $_SESSION['admin_name'] ?></span></h1>
       <p>this is an admin page</p>
-      <a href="index.php" class="btn">login</a>
-      <a href="register_form.php" class="btn">register</a>
-      <a href="logout.php" class="btn">logout</a>
+      <a href="../index.php" class="btn">login</a>
+      <a href="../register_form.php" class="btn">register</a>
+      <a href="../logout.php" class="btn">logout</a>
    </div>
 
 </div>

@@ -5,7 +5,7 @@ $pass       = "";
 $db         = "user_db";
 
 $conn    = mysqli_connect($host, $user, $pass, $db);
-if (!$conn) { //cek koneksi
+if (!$conn) { 
     die("Tidak bisa terkoneksi ke database");
 }  else {
   // echo "KONEKSI TERHUBUNG GAES!!!";
